@@ -64,11 +64,7 @@ class MainActivity2 : AppCompatActivity() {
 
         }
 
-         fun updateUI() {
-            val health= findViewById<TextView>(R.id.health)
-            val water= findViewById<TextView>(R.id.water)
-            val sunlight= findViewById<TextView>(R.id.sun)
-        }
+         
 
 
     }
@@ -86,6 +82,10 @@ class MainActivity2 : AppCompatActivity() {
     }
 
     private fun updateUI(){
+            val health= findViewById<TextView>(R.id.health)
+            val water= findViewById<TextView>(R.id.water)
+            val sunlight= findViewById<TextView>(R.id.sun)
+            
         health.text= "Health:$health"
         water.text="Water:$water"
         sunlight.text="Sunlight:$sunlight"
